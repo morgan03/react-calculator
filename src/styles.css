@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.projectTitle {
+  padding: 10px 0;
+}
+
+.calcColor {
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  width: 400px;
+  border-radius: 10px;
+}
+
+.calc-grid {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+form > button {
+  width: 100%;
+}
+
+.screenDiv div {
+  background-color: #fafafa;
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 100%;
+  padding: 25px 25px;
+  text-align: end;
+}
+
+.screenDiv div:first-child {
+  padding-top: 10px;
+  border-bottom: 1px solid #000;
+  font-size: 30px;
+}
+
+.screenDiv div:last-child {
+  font-size: 40px;
+}
+
+.screenDiv {
+  padding: 5px;
+}
+
+.buttonDiv {
+  height: 90%;
+  padding: 10px 5px;
+}
+
+.buttonDiv div button {
+  cursor: pointer;
+  height: 50px;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid #000;
+}
+
+.buttonDiv div button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.three-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.three-row:first-child {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.four-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.error {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: red;
+  padding: 5px;
+  width: 100%;
+  color: #fafafa;
+}
